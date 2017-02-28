@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="date-group">
+        <div id="date_picker_1" class="input-group">
+        </div>
+    </div>
+    <input id="mirror" class="form-control">
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/date.js"></script>
+<script>
+
+    var datePicker1 = new DatePicker({
+        id: "date_picker_1",
+//        date: "2016-01-01",
+        mirrorID: "mirror",
+        format: "yyyy年mm月dd日"
+//        hideInput: true,
+//        static: true
+    })
+</script>
+</body>
+</html>
